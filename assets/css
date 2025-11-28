@@ -1,0 +1,387 @@
+/* ========== GLOBAL STYLE ========== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f5f5f5; /* Latar belakang abu-abu muda */
+    line-height: 1.6;
+    color: #333;
+}
+
+/* container umum */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+    background: #ff6f00; /* Warna orange */
+    padding: 15px 0;
+    color: white;
+    
+    /* Flexbox untuk menata logo dan link */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.2s;
+}
+
+.navbar a:hover {
+    opacity: 0.8;
+}
+
+/* ========== KONTEN UTAMA & JUDUL ========== */
+main h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+
+/* ========== GRID RESEP & CARD ========== */
+
+/* Grid menggunakan CSS Grid untuk responsif */
+.grid {
+    display: grid;
+    /* Membuat kolom responsif: minimal 220px, sisanya 1fr */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+.card {
+    display: block; /* Menjadikan seluruh card bisa diklik */
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efek terangkat saat hover */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
+}
+
+.card .content {
+    padding: 15px;
+}
+
+.card .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card .author {
+    font-size: 14px;
+    color: gray;
+}
+
+/* --- FOOTER STYLE --- */
+
+.mega-footer {
+    background: #fff;
+    border-top: 1px solid #e4e4e4;
+    margin-top: 40px;
+    padding: 40px 20px 10px 20px;
+    font-family: Arial, sans-serif;
+    color: #444;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    /* Grid untuk menata 4 kolom footer */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #222;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.country-list a,
+.footer-section ul li a {
+    font-size: 14px;
+    color: #555;
+    margin-right: 15px; /* Memberi jarak antar tautan komunitas */
+    text-decoration: none;
+    display: inline-block;
+}
+
+.footer-section ul li a {
+    margin-right: 0;
+}
+
+.country-list a:hover,
+.footer-section ul li a:hover {
+    color: #ff6f00; /* Warna hover orange */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.social-icons img {
+    width: 28px; /* Sedikit lebih besar */
+    margin-right: 15px;
+    transition: 0.2s;
+}
+
+.social-icons img:hover {
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 13px;
+    color: #666;
+    border-top: 1px solid #e4e4e4;
+}
+
+/* ==================================== */
+/* ========== 1. GLOBAL STYLE ========== */
+/* ==================================== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f5f5f5; /* Latar belakang abu-abu muda */
+    line-height: 1.6;
+    color: #333;
+}
+
+/* container umum */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Judul Halaman */
+main h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+
+/* ==================================== */
+/* ========== 2. NAVBAR STYLE ========== */
+/* ==================================== */
+.navbar {
+    background: #ff6f00; /* Warna orange */
+    padding: 15px 0;
+    color: white;
+    
+    /* Flexbox untuk menata logo dan link */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.2s;
+}
+
+.navbar a:hover {
+    opacity: 0.8;
+}
+
+
+/* ==================================== */
+/* ========== 3. GRID & CARD STYLE ========== */
+/* ==================================== */
+
+/* Grid menggunakan CSS Grid untuk responsif */
+.grid {
+    display: grid;
+    /* Membuat kolom responsif: minimal 220px, sisanya 1fr */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+.card {
+    display: block; /* Agar seluruh card bisa diklik */
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efek terangkat saat hover */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Memastikan gambar mengisi area */
+}
+
+.card .content {
+    padding: 15px;
+}
+
+.card .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card .author {
+    font-size: 14px;
+    color: gray;
+}
+
+/* ==================================== */
+/* ========== 4. FOOTER STYLE ========== */
+/* ==================================== */
+
+.mega-footer {
+    background: #fff;
+    border-top: 1px solid #e4e4e4;
+    margin-top: 40px;
+    padding: 40px 20px 10px 20px;
+    color: #444;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    /* Grid untuk menata 4 kolom footer */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #222;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.country-list a,
+.footer-section ul li a {
+    font-size: 14px;
+    color: #555;
+    margin-right: 15px; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+.footer-section ul li a {
+    margin-right: 0;
+}
+
+.country-list a:hover,
+.footer-section ul li a:hover {
+    color: #ff6f00; /* Warna hover orange */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.social-icons img {
+    width: 28px; 
+    margin-right: 15px;
+    transition: 0.2s;
+}
+
+.social-icons img:hover {
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 13px;
+    color: #666;
+    border-top: 1px solid #e4e4e4;
+}
